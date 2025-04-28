@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가정통신문</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans:ital@0;1&display=swap');
+
+
+        @media (max-width: 768px)  {
+            /* css 스타일 */
+            .box {
+                background-color: #F6F6F6;
+                height: 73px;
+                width: 100%;
+                display:block;
+            }
+            .logo {
+                height: 48px;
+                padding-top: 13px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: relative; /* 박스보다 맨 위로 오게끔 하는거 */
+                z-index: 10;
+            }
+            .school{
+                width: 100%;
+            }
+            .school img {
+                height: auto;
+            }
+            .notice01 {
+                border-bottom: 0.5px solid #cecece;
+                width: 85%;
+                margin: 0 auto;
+            }
+            .n-title {
+                float: left;
+                padding-left: 30px;
+                padding-top: 20px;
+                font-weight: 700;
+                font-size: clamp(23px, 2.3vw, 42px);
+                padding-bottom: 10px;
+            }
+            .n-writer {
+                float: left;
+                padding-left: 30px;
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: clamp(15px, 2vw, 29px);
+                padding-bottom: 10px;
+            }
+            .n-date {
+                float: left;
+                padding-left: 30px;
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: clamp(15px, 2vw, 29px);
+                padding-bottom: 10px;
+            }
+            .n-item {
+                float: left;
+                padding-left: 30px;
+                padding-top: 20px;
+                font-weight: 400;
+                font-size: clamp(15px, 2vw, 29px);
+                padding-bottom: 20px;
+            }
+            .n {
+                float: left;
+                padding-left: 30px;
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: clamp(15px, 2vw, 29px);
+                padding-bottom: 10px;
+            }
+
+            .clearfix::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .list{
+                width: 78px;
+                height: 34px;
+                border: 0.5px solid #cecece;
+                background-color: white;
+                justify-content: center;  /* 수평 가운데 */
+                align-items: center;      /* 수직 가운데 */
+                display: flex;
+                float:right;
+                margin-right: 40px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .S {
+                display: block;
+                margin: 0 auto;
+                max-width: 80%;
+                height: auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .logo2 {
+                height: 48px;
+                padding-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .end {
+                display: flex;
+                flex-direction: column;
+                align-items: center;  /* 가로 가운데 정렬 */
+                text-align: center;   /* 텍스트 가운데 정렬 */
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: clamp(10px, 2vw, 20px);
+            }
+
+            .ending {
+                margin-top: 10px;
+                line-height: 1.5;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 1024px){
+            /* css 스타일 */
+        }
+
+        @media (min-width: 1024px){
+            /* css 스타일 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <img src="logo.png" class="logo">
+        </div>
+    </header>
+
+    <img src="school2.png" class="school">
+
+    <main class="notice">
+
+        <div class="notice-title clearfix">
+            <div class="n-title">가정통신문</div>
+        </div>
+
+        <div class="notice01"></div>
+
+        <div class="notice clearfix">
+            <div class="n"><strong>제목 </strong>보넥도 생일카페(부산) 현장체험학습</div>            
+        </div>
+
+        <div class="notice01"></div>
+
+        <div class="notice writer clearfix">
+            <div class="n-writer"><strong>작성자 </strong>이리우</div>            
+        </div>
+
+        <div class="notice01"></div>
+        
+        <div class="notice date clearfix">
+            <div class="n-date"><strong>작성일자 </strong>2025.05.29</div>            
+        </div>
+
+        <div class="notice01"></div>
+        
+        <div class="notice item clearfix">
+            <div class="n-item">안녕하세요.<br><br>보넥도 생일카페(부산)<br>현장체험학습 안내 가정통신문 입니다.<br>
+            <br>확인 후 동의서 회신 부탁드립니다.</div>            
+        </div>
+
+        <img src="busan.png" class="S">
+
+        <div class="notice01"></div>
+        
+        <div class="list">목록</div>
+        <div style="clear: both;"></div>
+    </main>
+
+    <main class="end">
+        <img src="logo.png" class="logo2">
+
+        <div class="ending">
+            서울 용산구 보넥도5길 30 (보넥동, 보넥도 고등학교)<br>
+            <strong>대표전화 </strong>교무실 02-530-2023, 행정실 02-530-2025
+
+        </div>
+
+    </main>
+</body>
+</html>

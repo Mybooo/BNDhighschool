@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보넥도 고등학교</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Sans:ital@0;1&display=swap');
+
+        body{
+            background-color: #EFF4F9;
+        }
+        @media (max-width: 768px)  {
+            /* css 스타일 */
+            .box {
+                background-color: #F6F6F6;
+                height: 73px;
+                width: 100%;
+                display:block;
+            }
+            .logo {
+                height: 48px;
+                padding-top: 13px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: relative; /* 박스보다 맨 위로 오게끔 하는거 */
+                z-index: 10;
+            }
+            .school{
+                width: 100%;
+            }
+            .school img {
+                height: auto;
+            }
+            .notice{
+                width: 90%;
+                background-color: white;
+                margin: 20px auto 0;
+                font-family: "Noto Sans KR", sans-serif;
+                letter-spacing: -1.5px;
+            }
+            .notice::after{
+                content: "";
+                display: block;
+                padding-top: 10%;
+            }
+            .N1 {
+                float: left;
+                padding-left: 30px;
+                padding-top: 20px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+            }
+            .D1 {
+                float: right;
+                padding-top: 20px;
+                padding-right: 30px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+            }
+            .N2 {
+                float: left;
+                padding-left: 30px;
+                padding-top: 15px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+            }
+            .D2 {
+                float: right;
+                padding-top: 15px;
+                padding-right: 30px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+            }
+            .N3 {
+                float: left;
+                padding-left: 30px;
+                padding-top: 15px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+            }
+            .D3 {
+                float: right;
+                padding-top: 15px;
+                padding-right: 30px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+            }
+            .N {
+                font-weight: 700;
+                text-align: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: clamp(15px, 2.5vw, 32px);
+            }
+            .clearfix::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .notice01 {
+                border-bottom: 0.5px solid #cecece;
+                width: 85%;
+                margin: 0 auto;
+            }
+            .notice2{
+                width: 90%;
+                background-color: white;
+                margin: 20px auto 0;
+                font-family: "Noto Sans KR", sans-serif;
+                letter-spacing: -1.5px;
+            }
+            .notice2::after{
+                content: "";
+                display: block;
+                padding-top: 10%;
+            }
+            .pic{
+                width: 90%;
+                background-color: white;
+                margin: 20px auto 0;
+                font-family: "Noto Sans KR", sans-serif;
+                letter-spacing: -1.5px;
+            }
+            .pic::after{
+                content: "";
+                display: block;
+                padding-top: 8%;
+            }
+            .picture {
+                width: 80%;
+                margin: 0 auto; /* 가운데 정렬의 핵심! */
+                text-align: center; /* 이미지가 inline-block이면 얘도 필요해 */
+            }
+
+            .picture img {
+                max-width: 100%;
+                height: auto;
+                display: inline-block;
+            }
+            .class {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 15px;
+                font-weight: 400;
+                font-size: clamp(13px, 2vw, 24px);
+                text-align: center;
+            }
+            .logo2 {
+                height: 48px;
+                padding-top: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .end {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: clamp(10px, 2vw, 20px);
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 1024px){
+            /* css 스타일 */
+        }
+
+        @media (min-width: 1024px){
+            /* css 스타일 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <img src="logo.png" class="logo">
+        </div>
+    </header>
+
+    <img src="school.png" class="school">
+
+    <main class="notice">
+        
+        <div class="N">공지사항</div>
+        <div class="notice01"></div>
+                <div class="notice-item clearfix">
+                    <div class="N1">제 1회 보넥도 모의고사 정답 안내</div>
+                    <div class="D1">2025.05.30</div>
+                </div>
+                <div class="notice-item clearfix">
+                    <div class="N2">제 1회 보넥도 모의고사 응시 안내</div>
+                    <div class="D2">2025.05.29</div>
+                </div>
+            <div class="notice-item clearfix">
+                <div class="N3">체육대회 경품 추첨 안내</div>
+                <div class="D3">2025.05.28 </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="notice2">
+        
+        <div class="N">가정통신문</div>
+        <div class="notice01"></div>
+
+        <div class="notice-item clearfix">
+            <div class="N1">보넥도 생일카페(서울) 현장체험학습 안내</div>
+            <div class="D1">2025.05.30</div>
+        </div>
+
+        <div class="notice-item clearfix">
+         <div class="N2">보넥도 생일카페(부산) 현장체험학습 안내</div>
+         <div class="D2">2025.05.30</div>
+        </div>
+
+        <div class="notice-item clearfix">
+            <div class="N3">제 1회 보넥도 모의고사 응시 안내</div>
+            <div class="D3">2025.05.29 </div>
+        </div>
+    </main>
+
+    <main class="pic">
+        <div class="N">이달의 학급사진</div>
+        <div class="picture">
+            <img src="we are one.jpeg" alt="이달의 학급사진">
+        </div>
+        <div class="class">3학년 6반<br>< 우 리 는  하 나 다 ><br>2025.05.30</div>
+    </main>    
+
+    <main class="end">
+        <img src="logo.png" class="logo2">
+        <p>서울 용산구 보넥도5길 30 (보넥동, 보넥도 고등학교)<br>
+            <strong>대표전화 </strong>교무실 02-530-2023, 행정실 02-530-2025</p>
+    </main>
+</body>
+</html>
